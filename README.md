@@ -1,2 +1,2 @@
 # Minnehack2023
-Danny, Sameen, Gayathri, Amoliga
+Danny, Kazi Nazruluddin, Gayathri, Amoliga
