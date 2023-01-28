@@ -1,2 +1,2 @@
 # Minnehack2023
-Danny, Sameen, Gayathri, Amolhiga
+Danny, Sameen, Gayathri, Amoligha
