@@ -1,2 +1,2 @@
 # Minnehack2023
-Danny, Kazi Nazruluddin, Gayathri, Amoliga
+Danny, Kazi Nazruluddin, Gayathri, Amoligha, Danny sucks
