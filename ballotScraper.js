@@ -13,7 +13,7 @@ var lia = 0;
 async function getInfo(testURL) {
   axios.get(testURL).then(urlResponse =>  {
     const $ = cheerio.load(urlResponse.data);
-    
+
 
   });
 
@@ -29,7 +29,7 @@ async function getSummary(urlSum) {
             .find("td.Ta\\(end\\)")
             .text()
             stats.push(link)
-            //console.log(link)
+            console.log(link)
         });
     //if bored in future, find a way to find using data-test attribute
         for (let i = 0; i < stats.length; i++) {
