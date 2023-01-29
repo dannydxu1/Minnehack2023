@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/dannydxu1/Minnehack2023#readme",
   "dependencies": {
+    "firebase": "^9.16.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6"
-  }
+  },
+  "type": "module"
 }
