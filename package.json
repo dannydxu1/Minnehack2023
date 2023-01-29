@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dannydxu1/Minnehack2023#readme",
   "dependencies": {
+    "compromise": "^14.8.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6"
   }
