@@ -1,0 +1,24 @@
+{
+  "name": "minnehack2023",
+  "version": "1.0.0",
+  "description": "Danny, Kazi Nazruluddin, Gayathri, Amoligha, Danny is cool",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannydxu1/Minnehack2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannydxu1/Minnehack2023/issues"
+  },
+  "homepage": "https://github.com/dannydxu1/Minnehack2023#readme",
+  "type": "module",
+  "dependencies": {
+    "firebase": "^9.16.0"
+  }
+}

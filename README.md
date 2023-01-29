@@ -1,2 +1,2 @@
 # Minnehack2023
-Danny, Kazi Nazruluddin, Gayathri, Amoligha, Danny is cool
+Danny, Atyl Chatterjee, Gayathri, Amoligha, Danny sucks
