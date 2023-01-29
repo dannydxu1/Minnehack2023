@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, setDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
 //Setting up db
 const firebaseConfig = {
@@ -16,13 +16,13 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //adding things to it: (now need to read json file & parse contents to read)
-const addData = async (x, y, z) => {
+const addData = async (bio, info, party) => {
   try {
     try {
       const docRef = await addDoc(collection(db, "users"), {
-        first: x,
-        last: y,
-        born: z
+        x: bio,
+        y: info,
+        z: party
       });
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
@@ -33,4 +33,21 @@ const addData = async (x, y, z) => {
   }
 }
 
-addData("Sameen", "Rahman", "2004");
+
+const getBio = async () => {
+  const querySnapshot = await getDocs(collection(db, "users"));
+  querySnapshot.forEach((doc) => {
+    console.log(`${doc.id} => ${doc.data()}`);
+  });
+}
+
+const getInfo = async () => {
+
+}
+const getParty = async () => {
+
+}
+
+export {
+  addData
+};
