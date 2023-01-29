@@ -1,21 +1,70 @@
 
+p1 {
+    color: white;
+    font-size: 25px;
+}
+
+/* Additional CSS rules */
 body {
-    font-family: "Helvetica", sans-serif;
-    color: #ffffff;
-    margin: 2em;
-    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif; 
+    color: darkseagreen;  
+  /*background-color: darkseagreen;*/
+
+  background-color: darkseagreen;
+  text-align: center;
+
+}
+
+h1 {
+  color: darkgreen;
+  font-size: 50px;
+}
+
+.text {
+  color: white;
+}
+
+label{
+    color: darkgreen;
+    font-size: 70px;
+}
+
+.center {
+    padding: 70px 0;
+    border: 3px solid green;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 35%;
-    margin-left : 35%;
-   
   }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
-  .text {
+
+#textbox{
+    height:70px;
+    width: 600px;
+    font-size:25pt;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+input{
+    text-align: center; 
+    border-radius: 10px;
+}
+button {
+    display: inline-block;
+    background-color: lightyellow;
+    padding: 20px;
+    height: 75px;
+    width: 200px;
     color: green;
+    text-align: center;
+    border: 4px double darkseagreen;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer; /* add this line */
+    margin: 5px; /* add this line */
   }
+  button:hover {
+    background-color: darkseagreen;
+  }
+    
