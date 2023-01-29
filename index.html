@@ -39,11 +39,36 @@
         <label for="fname">Enter your address:</label>
         <input type="text" id="textbox" name="textbox" align ="center">
 
-        <button onclick="getElementById('demo').innerHTML = test()">Let's go!</button>
+        <button onclick="getGoverner()">Let's go!</button>
 
-                <p id="demo"> blah </p>  
+                <p id="demo"></p>  
  
+        <script>
+        
 
+        //function test(){
+           //var address = document.getElementById("textbox").value;
+            //document.getElementById("demo").innerHTML = address;
+        //}
+
+        function getGoverner(theURL){
+            var address = document.getElementById("textbox").value;
+            const arr = address.split(" ");
+            var test = arr[arr.length - 1]; 
+            console.log(test);
+            let dict = {55155:"Tim Walz", 55388: "Scott Jenson", 55041: "Steve Patterson" };
+            for (var key in dict){
+                if(key == test){
+                    var governer = dict[key];
+                    //console.log("works");
+                }
+            }
+     
+            document.getElementById("demo").innerHTML = "Your nearest governer candidate who ran in 2022 is: " + governer;
+
+        }
+
+        </script>
 
     </body>
 

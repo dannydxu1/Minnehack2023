@@ -7,7 +7,7 @@ const GOOGLE_KEY = 'AIzaSyDrTO-ljxa2KihSCvyWa05Y5tezAL_iUVc';
 //var letsGo = document.getElementById("letsGo");
 //ar address = document.getElementById("textbox");
 
-
+var letsGo = document.getElementById("demo");
 letsGo.addEventListener("click", queryElectionData());
 console.log("hello");
 
