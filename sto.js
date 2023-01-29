@@ -36,4 +36,6 @@ const addData = async (x, y, z) => {
   }
 }
 
-addData("Sameen", "Rahman", "2004");
+export {
+  addData
+};
