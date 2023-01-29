@@ -36,6 +36,29 @@ const addData = async (x, y, z) => {
   }
 }
 
+<<<<<<< Updated upstream
 export {
   addData
 };
+=======
+async function addData2(x, y, z){
+  try {
+    try {
+      //parse the json file to extract the data & feed it into
+      const docRef = await addDoc(collection(db, "users"), {
+        bio: x,
+        info: y,
+        party: z,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  } catch (err) {
+    console.log("Error with the |add data| function: ", err.message);
+  }
+};
+
+export default "sto.js"
+export {addData2};
+>>>>>>> Stashed changes

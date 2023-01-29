@@ -23,4 +23,8 @@
     "request-promise": "^4.2.6"
   },
   "type": "module"
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

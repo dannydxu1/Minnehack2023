@@ -1,9 +1,15 @@
+<<<<<<< Updated upstream
 import 
+=======
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+>>>>>>> Stashed changes
 
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const fs = require("fs");
 var fullDataArray = []; //global variable, bad practice but what can you do
+import addData2 from "./sto.js";
 
 async function main() {
   console.log(
@@ -41,6 +47,10 @@ async function main() {
       console.log("Data written to file successfully!");
     }
   );
+<<<<<<< Updated upstream
+=======
+  addToDataBase();
+>>>>>>> Stashed changes
 }
 
 /** find political party function  */
@@ -63,10 +73,13 @@ async function getCandidateInfo(link, selector) {
 async function getParty(data) {
   const start = data.indexOf("(");
   const end = data.indexOf(")");
-  tempString = data.substring(start + 1, end);
-  fullDataArray.push(tempString)
+  const tempString = data.substring(start + 1, end);
+  fullDataArray.push(tempString);
 }
 
-
+async function addToDataBase(){
+    for (let i=0; i<fullDataArray.length; i=i+3) {
+        addData2(fullDataArray[i], fullDataArray[i+1], fullDataArray[i+2]);
+    }
+}
 main();
-
